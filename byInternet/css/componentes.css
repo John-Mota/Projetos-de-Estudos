@@ -1,0 +1,360 @@
+/*---------------*\
+    PLANO
+\*---------------*/
+
+.plano {
+    position: relative;
+
+    padding: 10px;
+    border: 1px solid blue;
+    
+    font-size: 1.4rem;
+    
+}
+
+.plano--mais--popular::after {
+    position: absolute;
+    top:-10px;
+    left: -10px;
+
+    padding: 0 10px;
+    
+    background-color: rgb(155, 2, 2);
+    color: white;
+
+    font-size: 0.5142em;
+    line-height: 2.5;
+
+    content: "MAIS QUENTE";
+}
+.plano__cabecario {
+    position: relative;
+
+    background-color: blue;
+    color: whitesmoke;
+
+    text-align: center;
+    line-height: 2.5;
+    margin: -10px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.plano__preco {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.plano__caracteristicas {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    font-size: 1em;
+}
+
+.plano__caracteristicas li {
+    text-align: center
+}
+
+.plano__rodape {
+    text-align: center;
+}
+
+/*---------------*\
+    BOTAO
+\*---------------*/
+
+.btn {
+
+    background-color: blue;
+    color: whitesmoke;
+    display: inline-block;
+    border: none;
+
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: normal;
+
+    
+}
+
+.btn:hover, .btn:focus {
+    background-color: rgb(20, 20, 219);
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.botao--assinar, .botao--login{
+    background-color: blue;
+}
+
+.botao--assinar:hover, .botao--assinar:focus,
+.botao--login:hover, .botao--login:focus {
+    background-color: rgb(20, 20, 219);
+}
+
+.btn--principal {
+   background-color: #fff; 
+   color: rgb(20, 20, 219);
+   text-shadow: 0.1px 0.1px black;
+   border-radius: 10%;
+}
+
+.btn--principal:hover, .btn--principal:focus {
+    background-color: blue;
+    text-shadow: 0.1px 0.1px black;
+
+    border-radius: 20%;
+
+}
+
+.botao-chaveador {
+    width: 24px;
+    height: 24px;
+    border: 0;
+
+    background: none;
+    background-image: url("../imagens/bars.png");
+
+    outline: none;
+}
+
+@media(min-width: 992px) {
+    .botao-chaveador {
+        display: none;
+    }
+}
+
+.btn--form {
+    background-color: rgb(20, 20, 219); 
+    color: #fff;
+    text-shadow: 0.1px 0.1px black;
+
+     border-radius: 10%;
+
+}
+
+.btn--form:hover, .btn--form:focus {
+    background-color: blue;
+    text-shadow: 0.1px 0.1px black;
+    text-decoration: none;
+}
+/*---------------*\
+    CHAMADAS
+\*---------------*/
+
+.chamada {
+    font-size: 1.6rem; /* Equivale a 16px */
+    text-align: center;
+}
+
+.chamada__titulo {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 3.375em;
+    line-height: 0.9;
+    text-shadow:1px 1px black ;
+}
+
+.chamada__subtitulo {
+    margin: 60px 0;
+
+    color: #fff;
+
+    font-size: 1em;
+}
+
+.chamada__acao {
+    font-size: 1em;
+}
+
+@media(min-width: 992px) {
+    .chamada {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size: 2.2rem;
+    }
+}
+
+/*---------------*\
+    DEPOIMENTO
+\*---------------*/
+
+.depoimento {
+    margin: 0;
+    padding: 0 60px;
+    font-size: 2.2rem;
+}
+
+@media(min-width: 992px) {
+    .depoimento {
+        padding-left: 15%;
+        padding-right: 15%;
+
+        font-size: 2.8rem;
+    }
+}
+
+.depoimento > blockquote {
+    position: relative;
+
+    margin: 0;
+    padding: 0 60px;
+
+    text-align: center;
+    font-size: 1em;
+}
+
+.depoimento >blockquote::before {
+    position: absolute;
+    left: 0;
+    top: -0.35em;
+    color: #fff;
+
+    font-size: 8em;
+
+    content: "\201C";
+}
+
+.depoimento__autor {
+    margin-top: 40px;
+
+    text-align: center;
+    font-size: 0.7272em;
+}
+
+.depoimento__autor > img {
+    border-radius: 50%;
+}
+
+.depoimento__autor > p {
+    margin-top: 10px;
+}
+
+/*---------------*\
+    NAVEGAÇÃO
+\*---------------*/
+
+.navegacao--asinatura {
+    text-align: center;
+}
+
+.navegacao__menu {
+    float: right;
+}
+
+/*---------------*\
+    Botão
+\*---------------*/
+
+
+
+/*---------------*\
+    MENU
+\*---------------*/
+
+.menu {
+    margin: 0;
+
+    font-size: 1.4rem;
+
+
+    list-style: none;
+}
+
+
+@media(max-width: 991px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        display: none;
+    
+        width: 200px;
+        padding: 20px;
+        border-right: 1px solid #eee;
+    
+        background-color: #fbfbfb;
+    
+    }
+
+    .menu--exibindo {
+        display: block;
+
+    }
+
+    .menu__item {
+        display: block;
+    
+        line-height: 3;
+    }
+    
+    .menu__item__botao {
+        margin-top: 20px;
+    
+    }
+}
+
+@media(min-width: 992px) {
+    .menu__item {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .menu__item:last-of-type {
+        padding-right: 0px;
+    }
+}
+
+/*---------------------*\
+    TITULO-FORMULARIO
+\*---------------------*/
+
+.titulo-formulario {
+
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #ccc;
+
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: #004b86;
+}
+
+/*---------------------*\
+    GRUPO ENTRADA
+\*---------------------*/
+.grupo-entrada {
+    margin-top: 15px;
+}
+.grupo-entrada > label {
+    display: block;
+
+
+    font-weight: bold;
+}
+
+
+/*---------------------*\
+        CAMPO
+\*---------------------*/
+
+.campo {
+    display: block;
+    width: 90%;
+    height: 2.8rem;
+
+    padding:5px;
+
+    font-size: 1.4em;
+}
